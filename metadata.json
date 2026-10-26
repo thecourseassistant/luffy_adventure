@@ -1,0 +1,6 @@
+{
+  "name": "Luffy's Jungle Adventure - A2 ESL Story Game",
+  "description": "An interactive 5-minute visual novel for A2 ESL learners featuring Luffy exploring a wild jungle, making moral choices, learning adventure vocabulary, and meeting the Straw Hat crew.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
