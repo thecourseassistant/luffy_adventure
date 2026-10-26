@@ -1,10 +1,24 @@
 import { StoryNode } from '../types';
 
+import imgIntro from '../assets/images/scene_intro_luffy_back_1793009707353.jpg';
+import imgLuffyJungle from '../assets/images/scene_luffy_jungle_clean_1793010053521.jpg';
+import imgJungleRuins from '../assets/images/jungle_ancient_ruins_1793007402844.jpg';
+import imgNamiWaterfall from '../assets/images/scene_waterfall_nami_clean_1793010054468.jpg';
+import imgZoroCave from '../assets/images/scene_cave_zoro_1793009707636.jpg';
+import imgZoroLost from '../assets/images/ending_zoro_lost_clean_1793010055155.jpg';
+import imgChopperCanopy from '../assets/images/scene_canopy_chopper_1793009708735.jpg';
+import imgRescuingCreature from '../assets/images/scene_rescuing_creature_1793010508958.jpg';
+import imgLuffyTrap from '../assets/images/scene_luffy_temple_trap_1793010864315.jpg';
+import imgEndingFeast from '../assets/images/ending_feast_1793009191397.jpg';
+import imgEndingGuardian from '../assets/images/ending_guardian_1793009191671.jpg';
+import imgEndingNarrowEscape from '../assets/images/ending_narrow_escape_1793009192260.jpg';
+import imgEndingStomachache from '../assets/images/ending_stomachache_1793009189517.jpg';
+
 export const STORY_NODES: Record<string, StoryNode> = {
   // SCENE 1: CINEMATIC OPENING (Back of Luffy looking at Emerald Island)
   intro: {
     id: 'intro',
-    bgImage: '/src/assets/images/scene_intro_luffy_back_1793009707353.jpg',
+    bgImage: imgIntro,
     speaker: 'Luffy',
     speakerColor: '#ef4444',
     dialogue: 'YOHOHO! We just landed on Emerald Island! I am going to explore this wild jungle! But first, a smart pirate needs a good tool.',
@@ -14,7 +28,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
   // SCENE 2: GEAR UP (FIRST CHOICE - TOOL)
   choose_tool: {
     id: 'choose_tool',
-    bgImage: '/src/assets/images/scene_luffy_jungle_clean_1793010053521.jpg',
+    bgImage: imgLuffyJungle,
     speaker: 'Luffy',
     speakerColor: '#ef4444',
     dialogue: 'Which tool should I pack into my adventure bag?',
@@ -37,7 +51,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
   // SCENE 3: FOOD / DRINK
   choose_food: {
     id: 'choose_food',
-    bgImage: '/src/assets/images/scene_luffy_jungle_clean_1793010053521.jpg',
+    bgImage: imgLuffyJungle,
     speaker: 'Luffy',
     speakerColor: '#ef4444',
     dialogue: 'Great tool! But wait... my stomach is growling loudly! What food or drink should I pack for lunch?',
@@ -60,7 +74,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
   // SCENE 4: CHOOSE PATH
   choose_path: {
     id: 'choose_path',
-    bgImage: '/src/assets/images/jungle_ancient_ruins_1793007402844.jpg',
+    bgImage: imgJungleRuins,
     speaker: 'Luffy',
     speakerColor: '#ef4444',
     dialogue: 'Alright, I am all ready! Look ahead, the jungle path divides into three mysterious ways. Which place should we explore first?',
@@ -83,7 +97,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
   // ================= BRANCH 1: WATERFALL (NAMI BLENDED) =================
   path_waterfall: {
     id: 'path_waterfall',
-    bgImage: '/src/assets/images/scene_waterfall_nami_clean_1793010054468.jpg',
+    bgImage: imgNamiWaterfall,
     speaker: 'Nami',
     speakerColor: '#f97316',
     dialogue: 'Luffy! Look at this gorgeous waterfall! My treasure map says ancient temple ruins are hidden right behind these waters. But the rocks are very slippery. What should we do?',
@@ -101,7 +115,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
 
   moral_dilemma_waterfall: {
     id: 'moral_dilemma_waterfall',
-    bgImage: '/src/assets/images/jungle_ancient_ruins_1793007402844.jpg',
+    bgImage: imgJungleRuins,
     speaker: 'Luffy',
     speakerColor: '#ef4444',
     dialogue: 'Look! Behind the waterfall are the temple ruins! On the left is a shiny golden treasure chest! But on the right, a poor baby jungle animal is trapped in thorny vines, crying for help! What should we do first?',
@@ -120,7 +134,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
   // ================= BRANCH 2: CAVE (ZORO BLENDED) =================
   path_cave: {
     id: 'path_cave',
-    bgImage: '/src/assets/images/scene_cave_zoro_1793009707636.jpg',
+    bgImage: imgZoroCave,
     speaker: 'Zoro',
     speakerColor: '#10b981',
     dialogue: 'Oi, Luffy. What took you so long? I have been walking inside this cave for two hours. I am totally NOT lost! The beach is definitely through that dark mossy passage... or maybe that way?',
@@ -138,7 +152,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
 
   zoro_lost_path: {
     id: 'zoro_lost_path',
-    bgImage: '/src/assets/images/ending_zoro_lost_clean_1793010055155.jpg',
+    bgImage: imgZoroLost,
     speaker: 'Zoro',
     speakerColor: '#10b981',
     dialogue: 'Trust me! A real swordsman never loses his way. Turn left here, then right, then left again! Wait... why are we looking at the exact same giant blue mushroom for the fourth time?',
@@ -156,7 +170,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
 
   moral_dilemma_cave: {
     id: 'moral_dilemma_cave',
-    bgImage: '/src/assets/images/scene_cave_zoro_1793009707636.jpg',
+    bgImage: imgZoroCave,
     speaker: 'Luffy',
     speakerColor: '#ef4444',
     dialogue: 'We found the cave exit into the ancient ruins! Look, Zoro! A little golden jungle creature is trapped between heavy falling stones. Above it, a pirate chest sparkles with gems! What should we do?',
@@ -175,7 +189,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
   // ================= BRANCH 3: CANOPY (CHOPPER BLENDED) =================
   path_canopy: {
     id: 'path_canopy',
-    bgImage: '/src/assets/images/scene_canopy_chopper_1793009708735.jpg',
+    bgImage: imgChopperCanopy,
     speaker: 'Chopper',
     speakerColor: '#ec4899',
     dialogue: 'Luffy! Be careful! The wind is blowing on this high rope bridge! I came up into the treetops to search for rare healing herbs. Can you help me cross this bridge?',
@@ -193,7 +207,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
 
   moral_dilemma_canopy: {
     id: 'moral_dilemma_canopy',
-    bgImage: '/src/assets/images/scene_canopy_chopper_1793009708735.jpg',
+    bgImage: imgChopperCanopy,
     speaker: 'Chopper',
     speakerColor: '#ec4899',
     dialogue: 'Look across the wooden platform! A wounded golden jungle eagle is tangled in old ropes! It cannot fly! But nearby, an ancient gold chest is resting on a weak branch. If the branch breaks, the gold will fall!',
@@ -212,7 +226,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
   // ================= RESOLUTION: KINDNESS =================
   resolve_kindness: {
     id: 'resolve_kindness',
-    bgImage: '/src/assets/images/scene_rescuing_creature_1793010508958.jpg',
+    bgImage: imgRescuingCreature,
     speaker: 'Luffy',
     speakerColor: '#ef4444',
     dialogue: 'I cut the ropes and give the little creature my food! The golden animal eats happily and licks my hand. Suddenly, its fur shines with warm light—it is the magical guardian spirit of Emerald Island!',
@@ -231,7 +245,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
   // ================= RESOLUTION: GREED =================
   resolve_greed: {
     id: 'resolve_greed',
-    bgImage: '/src/assets/images/scene_luffy_temple_trap_1793010864315.jpg',
+    bgImage: imgLuffyTrap,
     speaker: 'Luffy',
     speakerColor: '#ef4444',
     dialogue: 'I run forward and pull open the heavy gold chest! CLICK! An ancient stone trap is triggered! Giant vines snap shut and a giant stone boulder begins rolling down towards us!',
@@ -250,7 +264,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
   // ================= 5 ENDINGS (VISUAL NOVEL CLIMAX) =================
   ending_feast: {
     id: 'ending_feast',
-    bgImage: '/src/assets/images/ending_feast_1793009191397.jpg',
+    bgImage: imgEndingFeast,
     speaker: 'Luffy',
     speakerColor: '#ef4444',
     dialogue: 'WAHAHAHA! The golden beast led us into the ancient royal banquet hall! Look at all this roast meat, fresh food, and gold! Tonight, the Straw Hats feast!',
@@ -267,7 +281,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
 
   ending_guardian: {
     id: 'ending_guardian',
-    bgImage: '/src/assets/images/ending_guardian_1793009191671.jpg',
+    bgImage: imgEndingGuardian,
     speaker: 'Luffy',
     speakerColor: '#ef4444',
     dialogue: 'The gentle golden beast guided us safely to the sunny beach! It gave me a lucky emerald amulet and became our new best friend on Emerald Island!',
@@ -284,7 +298,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
 
   ending_narrow_escape: {
     id: 'ending_narrow_escape',
-    bgImage: '/src/assets/images/ending_narrow_escape_1793009192260.jpg',
+    bgImage: imgEndingNarrowEscape,
     speaker: 'Luffy',
     speakerColor: '#ef4444',
     dialogue: 'PHEW! That was close! I grabbed a high jungle vine and swung across the canyon just as the giant stone boulder crashed down! We dropped the gold, but we survived!',
@@ -301,7 +315,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
 
   ending_zoro_lost: {
     id: 'ending_zoro_lost',
-    bgImage: '/src/assets/images/ending_zoro_lost_clean_1793010055155.jpg',
+    bgImage: imgZoroLost,
     speaker: 'Zoro',
     speakerColor: '#10b981',
     dialogue: 'Hey Luffy, don\'t look at me like that! I told you, the ship is just over this next hill... wait, why are we back at the exact same glowing mushroom cave again?!',
@@ -318,7 +332,7 @@ export const STORY_NODES: Record<string, StoryNode> = {
 
   ending_stomachache: {
     id: 'ending_stomachache',
-    bgImage: '/src/assets/images/ending_stomachache_1793009189517.jpg',
+    bgImage: imgEndingStomachache,
     speaker: 'Chopper',
     speakerColor: '#ec4899',
     dialogue: 'LUFFY! I told you NOT to eat random glowing wild berries! Look at your swollen belly rumbling! Lie down right now while I brew this super bitter medicine potion!',
